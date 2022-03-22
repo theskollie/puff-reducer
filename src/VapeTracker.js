@@ -18,7 +18,7 @@ export default function VapeTracker(props) {
         <p>Total Daily Puffs: {props.totalAllowed}</p>
 
         <p>
-          Puffs Per Hour:{" "}
+          Puffs Per Hour: 
           {Math.round(props.totalAllowed / (25 - props.wakeUpTime))}
         </p>
         <h2 className="titles">Max Puffs @ End Of Hour</h2>
@@ -26,7 +26,7 @@ export default function VapeTracker(props) {
       <hr></hr>
       <div className="hours">
         <p>
-          <span className="fontBold">{props.wakeUpTime}PM: </span>{" "}
+          <span className="fontBold">{props.wakeUpTime}{props.wakeUpTime >= 12 ? "PM" : "AM"} </span>{" "}
           {Math.round(totalPerHour)}
         </p>
         <p>
@@ -78,7 +78,7 @@ export default function VapeTracker(props) {
           {Math.round(totalPerHour * 13)}
         </p>
         <p>
-          <span className="fontBold">{props.wakeUpTime + 13} </span>{" "}
+          <span className="fontBold">{props.wakeUpTime + 13} {props.wakeUpTime + 13 > 23 ? "AM" : "PM"} </span>{" "}
           {Math.round(totalPerHour * 14)}
         </p>
       </div>
