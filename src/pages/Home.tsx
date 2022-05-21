@@ -32,8 +32,6 @@ const Home = () => {
   }
   
   const [currentMax, setCurrentMax] = useState(returnCurrentMax(wakeUpTime));
-
-  const [settingsOpen, setSettingsOpen] = useState(false);
   
   return (
     <div>
