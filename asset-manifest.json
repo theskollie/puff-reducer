@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/puff-reducer/static/css/main.e6c13ad2.css",
+    "main.js": "/puff-reducer/static/js/main.89cdc893.js",
+    "index.html": "/puff-reducer/index.html",
+    "main.e6c13ad2.css.map": "/puff-reducer/static/css/main.e6c13ad2.css.map",
+    "main.89cdc893.js.map": "/puff-reducer/static/js/main.89cdc893.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.89cdc893.js"
+  ]
+}
