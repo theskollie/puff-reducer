@@ -63,7 +63,11 @@ const Settings = ({setWakeUpTime, setMaxPuffs, setHoursAwake, setCurrentMax, ret
       <div>
     <Container size="lg" mt={60}> 
     <Title order={3} sx={{textAlign: 'center', marginBottom: '20px'}}>Settings</Title>
-    <SimpleGrid cols={3} spacing="xl">
+    <SimpleGrid cols={3} spacing="xl"
+            breakpoints={[
+              { maxWidth: 1215, cols: 1, spacing: 'sm' },
+            ]}
+    >
     <TimeInput
       label="What time did you wake up?"
       description="Please select an hour with no minutes"

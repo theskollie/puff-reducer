@@ -46,7 +46,7 @@ export default function App() {
       fixed
       navbar={
         <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 300, lg: 300 }}>
-          <Sidebar />
+          <Sidebar setOpened={setOpened} />
         </Navbar>
       }
       footer={

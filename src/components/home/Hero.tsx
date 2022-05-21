@@ -8,8 +8,8 @@ const useStyles = createStyles((theme) => ({
     paddingBottom: 30,
 
     '@media (max-width: 755px)': {
-      paddingTop: 80,
-      paddingBottom: 60,
+      paddingTop: 20,
+      paddingBottom: 20,
     },
   },
 

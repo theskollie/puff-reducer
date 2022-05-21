@@ -16,7 +16,12 @@ const KeyPerformance = ({wakeUpTime, maxPuffs, hoursAwake, currentMax} : KPIprop
 
   return (
         <Container size="xl" mt={20}>
-            <SimpleGrid cols={3}>
+            <SimpleGrid cols={3}
+                  breakpoints={[
+                    { maxWidth: 289, cols: 1, spacing: 'sm' },
+                    { maxWidth: 755, cols: 2, spacing: 'sm' },
+                  ]}
+            >
                 <div>
                     <KPIStats data={{
                             label: 'Next Puff',

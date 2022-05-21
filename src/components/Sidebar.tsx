@@ -11,6 +11,10 @@ import {
 
 import {Link} from 'react-router-dom';
 
+interface SideBarProps {
+  setOpened: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 const useStyles = createStyles((theme, _params, getRef) => {
   const icon = getRef('icon');
   return {
@@ -78,7 +82,7 @@ const data = [
   { link: '/about', label: 'About', icon: InfoCircle },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({setOpened} : SideBarProps) {
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Reducer');
 
@@ -89,6 +93,7 @@ export default function Sidebar() {
       key={item.label}
       onClick={() => {
         setActive(item.label);
+        setOpened(false);
       }}
     >
       <item.icon className={classes.linkIcon} />
